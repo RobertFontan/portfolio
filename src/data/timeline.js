@@ -3,19 +3,19 @@ export default [
         year: '',
         title: '',
         duration: '',
-        details: 
+        details: ''
     },
     {
         year: '',
         title: '',
         duration: '',
-        details: 
+        details: ''
     },
     {
         year: '',
         title: '',
         duration: '',
-        details: 
+        details: ''
     }
 
 ]
