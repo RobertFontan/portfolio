@@ -4,7 +4,7 @@ import Portfolio from "./components/portfolio"
 import Timeline from "./components/timeline"
 import Footer from "./components/footer"
 import Contact from "./components/contact"
-
+import Filter from "./components/Filter"
 function App() {
   const [theme, setTheme] = useState(null);
 
