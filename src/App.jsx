@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from "react"
-import Intro from "./components/intro"
-import Portfolio from "./components/portfolio"
-import Timeline from "./components/timeline"
+import Intro from "./components/Intro"
+import Portfolio from "./components/Portfolio"
+import Timeline from "./components/Timeline"
 import Footer from "./components/footer"
-import Contact from "./components/contact"
-import Filter from "./components/Filter"
+import Contact from "./components/Contact"
+
 function App() {
   const [theme, setTheme] = useState(null);
 
