@@ -21,7 +21,11 @@ function Portfolio() {
 
     const [filters, setFilters] = useState([])
 
-    // something where if stack contains 
+    const handleButtonClick  = (cat) => {
+        updateFilter(cat)
+    }
+
+    
     const updateFilter = (filterValue) => {
         setFilters((prevFilters) => {
           if (prevFilters.includes(filterValue)) {
@@ -35,8 +39,23 @@ function Portfolio() {
     };
     
     const renderFilteredPortfolio = (selectedFilters) => {
+        if(selectedFilters.length == 0){
+            return(
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {portfolio.map(project => (
+                        <PortfolioItem
+                            imgUrl={project.imgUrl}
+                            title={project.title}
+                            stack={project.stack}
+                            link={project.link}
+                        />
+                    ))}
+                </div>
+            )
+        }
+        else{
         return (
-          <div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {portfolio
               .filter((proj) => {
                 // Check if any of the selected filters exist in the project's stack
@@ -52,60 +71,26 @@ function Portfolio() {
                 />
               ))}
           </div>
-        );
+        );}
     };
-      
-    
 
-    if(filters.length != 0){
-        console.log(filters)
-        return(
-            <div>
-                <div className="flex gap-2 items-center mb-4">
-                    <button onClick={()=>setFilters([])}>reset</button>
-            
-                    {set.map( category => 
-                    <button className="inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-white rounded-md" 
-                        onClick={()=> updateFilter(category)}>
-                        {category}
-                    </button>)}
-                    
-                    <h3>Filters selected: {filters.map((filter) => (<p>{filter}</p>))}</h3>
-                </div>
-                <div className="flex flex-col md:flex-row items-center justify-center">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                        {renderFilteredPortfolio(filters)}
-                    </div>
-                </div>
-            </div>
-        )
-    }
+    // TODO: make buttons more obvious
 
-
-    // button should have behavior when selected 
     return(
         <div>
-            <div className="flex gap-2 items-center mb-4">
-                <button onClick={()=>setFilters([])}>reset</button>
+            <p className="text-lg md:text-xl dark:text-white mb-2 md:mb-3 font-semibold">Use the filters below!</p>
+            <div className="flex gap-2 items-center mb-4  flex-wrap">
 
-                {set.map( category => 
-                <button className="inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-white rounded-md" 
-                    onClick={()=> updateFilter(category)}>
+                {set.map(category => 
+                <button className={`inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-white rounded-md 
+                ${filters.includes(category) ? 'bg-gray-400	 dark:bg-gray-500': ''}`}
+                    onClick={()=> handleButtonClick(category)}>
                     {category}
                 </button>)}
-                
-                <h3>Filters selected: {filters.map((filter) => (<p>{filter}</p>))}</h3>
             </div>
             <div className="flex flex-col md:flex-row items-center justify-center">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {portfolio.map(project => (
-                        <PortfolioItem
-                            imgUrl={project.imgUrl}
-                            title={project.title}
-                            stack={project.stack}
-                            link={project.link}
-                        />
-                    ))}
+                <div>
+                    {renderFilteredPortfolio(filters)}
                 </div>
             </div>
         </div>

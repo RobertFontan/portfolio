@@ -1,5 +1,17 @@
 export default [
-    
+    {
+        title: 'SwampStream',
+        imgUrl:'https://lh5.googleusercontent.com/-VfFs1-aLRNuVJsEw2h7laMadxXaaDPM1DGEXQMZveOQRzDEkHWKh11UTmqTcNeB2YMhXow2abJp4DhgPq2voxk=w16383',
+        stack:['React','Vite', 'Bootstrap','OpenAI', 'YouTube'],
+        link: 'https://sites.google.com/view/swampstream/home'
+    },
+    {
+        title: 'UFCapi',
+        imgUrl: '',
+        stack: ['Python', 'Flask', 'Stripe'],
+        link: ''
+
+    },
     {
         title: 'Developer Portfolio',
         imgUrl: 'https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png',
