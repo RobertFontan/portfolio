@@ -1,8 +1,9 @@
 export default [
     {
         title: 'SwampStream',
-        imgUrl: 'https://lh6.googleusercontent.com/rglpj95XfJthSgUP8Gnn6UOV2KNMTB-3hMddfBaz3cxvisbFjUYV0dSFsH2o1qjoG3mlKWfdN4oNdfeRmfm8gFQ=w16383',
-        stack:['React','Vite', 'Bootstrap','OpenAI', 'YouTube', 'Supabase'],
+        imgUrl: 'https://i.imgur.com/2T4zoOW.png',
+        //imgUrl: 'https://lh6.googleusercontent.com/rglpj95XfJthSgUP8Gnn6UOV2KNMTB-3hMddfBaz3cxvisbFjUYV0dSFsH2o1qjoG3mlKWfdN4oNdfeRmfm8gFQ=w16383',
+        stack:['React','Vite', 'Bootstrap','OpenAI', 'YouTube', 'Supabase', 'MERN'],
         link: 'https://sites.google.com/view/swampstream/home'
     },
     {
