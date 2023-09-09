@@ -1,39 +1,39 @@
 export default [
     {
         title: 'SwampStream',
-        imgUrl:'https://lh5.googleusercontent.com/-VfFs1-aLRNuVJsEw2h7laMadxXaaDPM1DGEXQMZveOQRzDEkHWKh11UTmqTcNeB2YMhXow2abJp4DhgPq2voxk=w16383',
-        stack:['React','Vite', 'Bootstrap','OpenAI', 'YouTube'],
+        imgUrl: 'https://lh6.googleusercontent.com/rglpj95XfJthSgUP8Gnn6UOV2KNMTB-3hMddfBaz3cxvisbFjUYV0dSFsH2o1qjoG3mlKWfdN4oNdfeRmfm8gFQ=w16383',
+        stack:['React','Vite', 'Bootstrap','OpenAI', 'YouTube', 'Supabase'],
         link: 'https://sites.google.com/view/swampstream/home'
     },
     {
         title: 'UFCapi',
-        imgUrl: '',
+        imgUrl: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
         stack: ['Python', 'Flask', 'Stripe'],
-        link: ''
+        link: 'https://github.com/RobertFontan/ufc-scraping'
 
     },
     {
         title: 'Developer Portfolio',
-        imgUrl: 'https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png',
+        imgUrl: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
         stack: ['React', 'Tailwind', 'Vite'],
         link: 'https://github.com/RobertFontan/portfolio',
     },
     {
         title: 'Bulletin Board',
-        imgUrl: 'https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png',
+        imgUrl: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
         stack: ['Java'],
         link: 'https://github.com/RobertFontan/internet-networking-fundamentals',
     },
     
     {
         title: 'WAD File Data Parser',
-        imgUrl: 'https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png',
+        imgUrl: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
         stack: ['C++', 'FUSE'],
         link: 'https://github.com/RobertFontan/',
     },
     {
         title: 'System Calls',
-        imgUrl: 'https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png',
+        imgUrl: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
         stack: ['C++',],
         link: 'https://github.com/RobertFontan/',
     },
@@ -52,13 +52,13 @@ export default [
     },
     {
         title: 'Minesweeper',
-        imgUrl: 'https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png',
+        imgUrl: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
         stack: ['C++', 'SFML'],
         link: 'https://github.com/RobertFontan/Minesweeper',
     },
     {
         title: 'Image Processor',
-        imgUrl: 'https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png',
+        imgUrl: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
         stack: ['C++'],
         link: 'https://github.com/RobertFontan/ImageProcessing',
     }

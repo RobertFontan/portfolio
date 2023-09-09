@@ -78,7 +78,7 @@ function Portfolio() {
 
     return(
         <div>
-            <p className="text-lg md:text-xl dark:text-white mb-2 md:mb-3 font-semibold">Use the filters below!</p>
+            <p className="text-lg md:text-xl dark:text-white mb-2 md:mb-3 font-semibold">Click the filters below!</p>
             <div className="flex gap-2 items-center mb-4  flex-wrap">
 
                 {set.map(category => 

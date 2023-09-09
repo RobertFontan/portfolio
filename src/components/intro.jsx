@@ -11,7 +11,7 @@ function Intro() {
             mb-3 font-medium">Software Engineer</p>
             <p className="text-sm max-w-xl mb-5
             font-bold"> 
-            I'm currently a undergraduate student at the University of Florida. I'm a Computer Science major with a minor in Digital Art. Check out my 
+            Studying CS @ UF, with a minor in Business Administration. Interested in all things Software Development. Check out my 
             {' '}
                 <a
                     href="https://github.com/RobertFontan"
@@ -23,7 +23,6 @@ function Intro() {
                 >
                     github here!
                 </a>{' '}
-            I'm currently interest in web development, internet networking, and building REST APIs.
             </p>
         </div>
     )
